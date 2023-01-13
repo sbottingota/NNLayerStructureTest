@@ -54,9 +54,9 @@ for layerSize in layerSizes:
     print("Architecture:", layerSize)
     print("Accuracy:", nRight / (nRight + nWrong))
 
-    weights = len(list(itertools.chain(*list(itertools.chain(*clf.coefs_)))))
-    biases = len(list(itertools.chain(*clf.coefs_)))
-    params = weights + biases
+    nWeights = len(list(itertools.chain(*list(itertools.chain(*clf.coefs_)))))
+    nBiases = len(list(itertools.chain(*clf.coefs_)))
+    params = nWeights + nBiases
 
     print("Parameters:", params)
 
