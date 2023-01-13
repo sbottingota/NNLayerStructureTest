@@ -5,8 +5,6 @@ import numpy as np
 import pickle
 import itertools
 
-a = np.array((1, 2))
-
 layerSizes = []
 
 for i in range(1, 5):
