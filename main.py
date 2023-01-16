@@ -35,7 +35,7 @@ xTrain = np.reshape(xTrain, (len(xTrain), 28 ** 2))
 xTest = np.reshape(xTest, (len(xTest), 28 ** 2))
 
 for layerSize in layerSizes:
-    clf = MLPClassifier(hidden_layer_sizes=layerSize, learning_rate="invscaling", verbose=True, max_iter=200)
+    clf = MLPClassifier(hidden_layer_sizes=layerSize, learning_rate="invscaling", verbose=False, max_iter=200)
     clf.fit(xTrain, yTrain)
 
     predictions = clf.predict(xTest)
